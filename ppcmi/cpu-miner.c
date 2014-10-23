@@ -386,13 +386,13 @@ static bool jobj_binary(const json_t *obj, const char *key, void *buf,
         return false;
     }
     hexstr = json_string_value(tmp);
+    applog(LOG_ERR, "JSON key '%s'", hexstr);
     if (unlikely(!hexstr)) {
         applog(LOG_ERR, "JSON key '%s' is not a string", key);
         return false;
     }
     if (!hex2bin(buf, hexstr, buflen))
         return false;
-
     return true;
 }
 
@@ -438,6 +438,7 @@ bool rpc2_job_decode(const json_t *job, struct work *work) {
 
         uint32_t target;
         jobj_binary(job, "target", &target, 4);
+        applog(LOG_INFO, "target set %zu", target);
         if(rpc2_target != target) {
             float hashrate = 0.;
             pthread_mutex_lock(&stats_lock);

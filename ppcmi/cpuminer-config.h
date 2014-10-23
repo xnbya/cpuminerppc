@@ -143,6 +143,9 @@
 /* Defined if libcurl supports TFTP */
 #define LIBCURL_PROTOCOL_TFTP 1
 
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+/* #undef NO_MINUS_C_MINUS_O */
+
 /* Name of package */
 #define PACKAGE "cpuminer"
 
@@ -179,16 +182,16 @@
 #define USE_ASM 1
 
 /* Define to 1 if AVX assembly is available. */
-#define USE_AVX 1
+/* #undef USE_AVX */
 
 /* Define to 1 if AVX2 assembly is available. */
-#define USE_AVX2 1
+/* #undef USE_AVX2 */
 
 /* Define if __uint128_t is available */
 #define USE_INT128 1
 
 /* Define to 1 if XOP assembly is available. */
-#define USE_XOP 1
+/* #undef USE_XOP */
 
 /* Version number of package */
 #define VERSION "1.0.4"

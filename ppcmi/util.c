@@ -461,6 +461,7 @@ char *bin2hex(const unsigned char *p, size_t len)
 
 bool hex2bin(unsigned char *p, const char *hexstr, size_t len)
 {
+
 	char hex_byte[3];
 	char *ep;
 
@@ -484,6 +485,7 @@ bool hex2bin(unsigned char *p, const char *hexstr, size_t len)
 	}
 
 	return (len == 0 && *hexstr == 0) ? true : false;
+
 }
 
 /* Subtract the `struct timeval' values X and Y,

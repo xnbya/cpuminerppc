@@ -193,7 +193,7 @@ m4trace:configure.ac:4: -1- AC_SUBST_TRACE([target_os])
 m4trace:configure.ac:4: -1- m4_pattern_allow([^target_os$])
 m4trace:configure.ac:6: -1- AM_INIT_AUTOMAKE([foreign subdir-objects])
 m4trace:configure.ac:6: -1- m4_pattern_allow([^AM_[A-Z]+FLAGS$])
-m4trace:configure.ac:6: -1- AM_AUTOMAKE_VERSION([1.14.1])
+m4trace:configure.ac:6: -1- AM_AUTOMAKE_VERSION([1.13.4])
 m4trace:configure.ac:6: -1- AC_REQUIRE_AUX_FILE([install-sh])
 m4trace:configure.ac:6: -1- AC_SUBST([INSTALL_PROGRAM])
 m4trace:configure.ac:6: -1- AC_SUBST_TRACE([INSTALL_PROGRAM])
@@ -341,7 +341,6 @@ m4trace:configure.ac:13: -1- m4_pattern_allow([^EXEEXT$])
 m4trace:configure.ac:13: -1- AC_SUBST([OBJEXT], [$ac_cv_objext])
 m4trace:configure.ac:13: -1- AC_SUBST_TRACE([OBJEXT])
 m4trace:configure.ac:13: -1- m4_pattern_allow([^OBJEXT$])
-m4trace:configure.ac:13: -1- AC_REQUIRE_AUX_FILE([compile])
 m4trace:configure.ac:13: -1- AC_SUBST([DEPDIR], ["${am__leading_dot}deps"])
 m4trace:configure.ac:13: -1- AC_SUBST_TRACE([DEPDIR])
 m4trace:configure.ac:13: -1- m4_pattern_allow([^DEPDIR$])
@@ -398,6 +397,11 @@ m4trace:configure.ac:14: -1- AC_SUBST([EGREP])
 m4trace:configure.ac:14: -1- AC_SUBST_TRACE([EGREP])
 m4trace:configure.ac:14: -1- m4_pattern_allow([^EGREP$])
 m4trace:configure.ac:15: -1- AM_PROG_CC_C_O
+m4trace:configure.ac:15: -1- AC_DEFINE_TRACE_LITERAL([NO_MINUS_C_MINUS_O])
+m4trace:configure.ac:15: -1- m4_pattern_allow([^NO_MINUS_C_MINUS_O$])
+m4trace:configure.ac:15: -1- AH_OUTPUT([NO_MINUS_C_MINUS_O], [/* Define to 1 if your C compiler doesn\'t accept -c and -o together. */
+@%:@undef NO_MINUS_C_MINUS_O])
+m4trace:configure.ac:15: -1- AC_REQUIRE_AUX_FILE([compile])
 m4trace:configure.ac:16: -1- AC_SUBST([CCAS])
 m4trace:configure.ac:16: -1- AC_SUBST_TRACE([CCAS])
 m4trace:configure.ac:16: -1- m4_pattern_allow([^CCAS$])
@@ -635,7 +639,7 @@ m4trace:configure.ac:129: -1- AH_OUTPUT([LIBCURL_PROTOCOL_SMTP], [/* Defined if 
 @%:@undef LIBCURL_PROTOCOL_SMTP])
 m4trace:configure.ac:129: -2- _m4_warn([obsolete], [The macro `AC_HELP_STRING' is obsolete.
 You should run autoupdate.], [../../lib/autoconf/general.m4:207: AC_HELP_STRING is expanded from...
-aclocal.m4:80: LIBCURL_CHECK_CONFIG is expanded from...
+aclocal.m4:60: LIBCURL_CHECK_CONFIG is expanded from...
 configure.ac:129: the top level])
 m4trace:configure.ac:129: -1- AC_SUBST([AWK])
 m4trace:configure.ac:129: -1- AC_SUBST_TRACE([AWK])
